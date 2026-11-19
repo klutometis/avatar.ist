@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>avatar.ist — meet your avatar host</title>
+<meta name="description" content="Video avatar hosts that chat with you and make you a little movie.">
+<link rel="icon" href="favicon.ico">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #0a0a0a; color: #fff;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 64rem; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+  h1 { font-size: 1.5rem; font-weight: 600; margin: 0; }
+  .sub { margin: .25rem 0 0; font-size: .875rem; color: rgba(255,255,255,.6); }
+  .demo { margin: 2rem 0 2.5rem; text-align: center; }
+  video {
+    max-width: 100%; max-height: 80vh; aspect-ratio: 574 / 1022;
+    border-radius: 1rem; border: 1px solid rgba(255,255,255,.1); background: #171717;
+  }
+  .note { margin: .75rem 0 0; font-size: .8125rem; color: rgba(255,255,255,.5); }
+  .grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 640px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 768px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+  .card {
+    overflow: hidden; border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,.1); background: #171717;
+  }
+  .card img { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; }
+  .card div { padding: .75rem; }
+  .name { font-size: .875rem; font-weight: 500; }
+  .tag { font-size: .75rem; color: rgba(255,255,255,.5); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Meet your avatar host ✨</h1>
+    <p class="sub">Characters who chat with you on video — and make you a little movie.</p>
+  </header>
+
+  <section class="demo">
+    <video controls playsinline preload="metadata" poster="poster.jpg">
+      <source src="demo.mp4" type="video/mp4">
+    </video>
+    <p class="note">Live chat with the hosts is paused for now; this video shows them in action.</p>
+  </section>
+
+  <section class="grid">
+    <article class="card"><img src="hosts/star.jpg" alt="Star"><div><div class="name">Star</div><div class="tag">the friendly little star</div></div></article>
+    <article class="card"><img src="hosts/boba.jpg" alt="Boba"><div><div class="name">Boba</div><div class="tag">bubbly boba-tea buddy</div></div></article>
+    <article class="card"><img src="hosts/boom.jpg" alt="Boom"><div><div class="name">Boom</div><div class="tag">block-party boombox</div></div></article>
+    <article class="card"><img src="hosts/sprout.jpg" alt="Sprout"><div><div class="name">Sprout</div><div class="tag">calm windowsill succulent</div></div></article>
+    <article class="card"><img src="hosts/soccerball.jpg" alt="Domino"><div><div class="name">Domino</div><div class="tag">game-day soccer ball</div></div></article>
+    <article class="card"><img src="hosts/apollo.jpg" alt="Apollo"><div><div class="name">Apollo</div><div class="tag">radiant Greek sun-god</div></div></article>
+    <article class="card"><img src="hosts/jade.jpg" alt="Jade"><div><div class="name">Jade</div><div class="tag">graceful wuxia swordswoman</div></div></article>
+    <article class="card"><img src="hosts/kit.jpg" alt="Kit"><div><div class="name">Kit</div><div class="tag">clever little fox-spirit</div></div></article>
+  </section>
+</main>
+</body>
+</html>
